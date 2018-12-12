@@ -12,7 +12,7 @@
     "serve": "vue-cli-service serve",
     "build-wc": "vue-cli-service build src/components/vi-icon/index.js --target wc --name vi-icon",
     "build": "vue-cli-service build --target lib --name yolo src/index.js",
-    "release": "release-it --buildCommand='yarn build' --verbose"
+    "release": "release-it --verbose"
   },
   "dependencies": {
     "@vue/cli-service": "3.0.0",
