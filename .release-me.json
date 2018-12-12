@@ -1,0 +1,6 @@
+{
+  "buildCommand": "yarn build",
+  "dist": {
+    "repo": "git@github.com:cliff-ehla/shim.git"
+  }
+}
