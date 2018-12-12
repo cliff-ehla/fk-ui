@@ -11,7 +11,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build-wc": "vue-cli-service build src/components/vi-icon/index.js --target wc --name vi-icon",
-    "build": "vue-cli-service build --target lib --name yolo src/index.js"
+    "build": "vue-cli-service build --target lib --name yolo src/index.js",
+    "release": "release-it --buildCommand='cat a b > dist/c' --verbose"
   },
   "dependencies": {
     "@vue/cli-service": "3.0.0",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.1",
+    "release-it": "^8.4.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue-template-compiler": "^2.5.17"
