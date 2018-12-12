@@ -1,0 +1,116 @@
+html, body
+  height: 100%
+  min-height: 100%
+  position: relative
+  width: 100%
+
+html
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  overflow-x: hidden
+
+body
+  font-family: $page-font
+  color: $font-color
+  line-height: $line-height-root
+  font-size: $font-size-root
+
+header
+  transition: .3s padding $transition
+  width: 100%
+  z-index: 1
+
+main
+  transition: .3s padding $transition
+  will-change: padding-left
+
+a
+  color: inherit
+  text-decoration: none
+
+ol, ul, li
+  list-style: none
+
+img
+  max-width: 100%
+
+::-ms-clear
+::-ms-reveal
+  display: none
+
+p
+  margin 1rem 0
+
+  &.-large
+    font-size 18px
+
+  &.-compact
+    line-height 1.4em
+
+a
+  cursor pointer
+  color $brand
+
+  &:hover
+    // border-bottom 1px solid currentColor
+    color darken($brand, 10%)
+
+h1, h2, h3, h4, h5, h6, .headline
+  color $font-color-4
+  margin-top 0
+  margin-bottom 32px
+  line-height 1.2
+
+h1
+  font-size 50px
+  line-height 1.05
+  font-weight 300
+
+h2
+  font-size 36px
+  line-height 1.2
+  font-weight 500
+
+h3
+  font-size 28px
+  line-height 1.419
+  font-weight 500
+  margin-bottom 16px
+
+h4
+  font-size 20px
+  font-weight bold
+  margin-bottom 16px
+
+h5
+  font-size 16px
+  font-weight bold
+  margin-bottom 8px
+
+h6
+  font-size 13px
+  font-weight bold
+  margin-bottom 8px
+
+.info-text
+  font-size 0.87em // 14px relative to root
+  color $font-color-2
+  line-height 1.33
+
+.headline
+  width 100%
+
+  h1, h2, h3, h4
+    margin-bottom 8px
+
+  p
+    margin-top 0
+    color $font-color-2
+
+:first-child
+  margin-top 0
+
+:last-child
+  margin-bottom 0

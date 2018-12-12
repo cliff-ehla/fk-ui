@@ -1,0 +1,37 @@
+@import '../../stylus/settings.styl'
+.vi-message
+  label()
+  display flex
+  align-items center
+  padding 12px 32px
+  background white
+  font-size 16px
+  border 1px solid $border-color
+  box-shadow $box-shadow
+  max-width 500px
+  position fixed
+  bottom 24px
+  right -1px
+  z-index 9999
+
+  &__icon
+    margin-right 16px
+    margin-top 3px
+
+  &--success
+    .vi-message__icon
+      color $success-color
+
+    &:before
+      background $success-color
+
+  &--error
+    .vi-message__icon
+      color $error-color
+
+    &:before
+      background $error-color
+
+
+
+

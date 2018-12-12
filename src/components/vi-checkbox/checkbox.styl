@@ -1,0 +1,40 @@
+@import '../../stylus/settings.styl'
+
+.vi-checkbox
+  display flex
+  user-select none
+  font-size $font-size-root
+  align-items center
+  margin 8px 0
+
+  &--inline
+    display inline
+    &:not(:first-child)
+      margin-left 16px
+
+  &--disabled
+    cursor no-drop
+    opacity 0.3
+
+  &--active
+    color $brand
+
+    .vi-checkbox__icon
+      color inherit
+
+  &__main
+    cursor pointer
+    display inline-flex
+    align-items center
+
+    .vi-checkbox--disabled &
+      cursor no-drop
+
+  &__label
+    margin-left 8px
+    line-height 1.2
+
+  &__icon
+    flex-shrink 0
+    width 18px
+    height @width
